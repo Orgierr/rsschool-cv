@@ -1,14 +1,25 @@
+:root {
+  --ligth-gray-color: #777777;
+}
 nav {
   display: flex;
   place-content: center;
 }
-.site-navigation {
+.navigation {
   display: flex;
 }
-.site-navigation__item {
+.navigation__item {
   list-style: none;
   margin-left: 10px;
 }
-.site-navigation__link {
+.navigation__link {
   text-decoration: none;
+}
+section {
+  text-align: center;
+  margin: 0 10px;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid var(--ligth-gray-color);
 }
