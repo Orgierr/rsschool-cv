@@ -1,3 +1,14 @@
-body {
-  margin:0;
+nav {
+  display: flex;
+  place-content: center;
+}
+.site-navigation {
+  display: flex;
+}
+.site-navigation__item {
+  list-style: none;
+  margin-left: 10px;
+}
+.site-navigation__link {
+  text-decoration: none;
 }
