@@ -61,4 +61,6 @@ Telgram bots,browser extension,SPA,mobile app.
 
 ### Language:
 
-English level - Pre-Intermediate
+English Pre-Intermediate
+Ukrainian Native
+Russian Native
