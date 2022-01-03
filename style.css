@@ -1,0 +1,147 @@
+:root {
+  --title-color: #192430;
+  --description-color: #3c4a59;
+}
+nav {
+  display: flex;
+  place-content: center;
+  height: 60px;
+}
+.navigation {
+  display: flex;
+}
+.navigation__item {
+  list-style: none;
+  margin-left: 10px;
+}
+.navigation__link {
+  text-decoration: none;
+  color: var(--description-color);
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+}
+.navigation__link:hover {
+  color: var(--title-color);
+}
+section {
+  margin: 5px 10px;
+  width: 100%;
+}
+.person__name {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  color: var(--title-color);
+}
+main {
+  padding: 0 10px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr auto 1fr;
+
+  grid-template-areas:
+    "person person person"
+    "about divider skills"
+    "education divider language"
+    "code divider projects"
+    "contacts divider projects";
+}
+.person {
+  grid-area: person;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+#skills {
+  grid-area: skills;
+}
+#about {
+  grid-area: about;
+}
+#education {
+  grid-area: education;
+}
+#language {
+  grid-area: language;
+}
+#contacts {
+  grid-area: contacts;
+}
+#projects {
+  grid-area: projects;
+}
+#code {
+  grid-area: code;
+}
+.divider {
+  grid-area: divider;
+  width: 2px;
+  height: 100%;
+  background: black;
+}
+.title {
+  margin: 0 10px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--title-color);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.description {
+  margin: 9px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--description-color);
+}
+.description__item {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.projects__img {
+  display: flex;
+  place-content: center;
+}
+footer {
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  place-items: center;
+  grid-template-areas: "copyright github school";
+  height: 90px;
+}
+.footer__copyright {
+  grid-area: copyright;
+}
+.footer__github {
+  text-decoration: none;
+  color: var(--description-color);
+  grid-area: github;
+}
+.footer__school {
+  grid-area: school;
+}
+
+@media (max-width: 800px) {
+  main {
+    padding: 0 10px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "person"
+      "about"
+      "skills"
+      "education"
+      "language"
+      "code"
+      "projects"
+      "contacts";
+  }
+  .navigation {
+    display: none;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: " copyright copyright" "github school";
+  }
+}

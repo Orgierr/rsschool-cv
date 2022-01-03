@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ihor Kysylevych</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="navigation">
+        <li class="navigation__item"><a class="navigation__link" href="#about">·About myself·</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#contacts">·Contacts·</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#skills">·Skills·</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#code">·Code example·</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#education">·Education·</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#projects">·Projects·</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#language">·Language·</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="person">
+      <img src="./images/avatar.png" alt="avatar" width="128" height="128">
+      <h1 class="person__name">Ihor Kysylevych</h1>
+    </section>
+    <section id="about">
+      <div class="title">
+        <h2>· About ·</h2>
+      </div>
+      <div class="description">
+        <span>
+          Versatile Full Stack Developer with 2+ years of experience implementing complex web and mobile apps.
+        </span>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="title">
+        <h2>· Skills ·</h2>
+      </div>
+      <div class="description">
+        <span>JavaScript, React, HTML, CSS, SCSS, Webpack, Redux, Jest, Git, Node, NPM, TypeScript, Python, Vue, Vuex,
+          Vite, Go, PHP, Docker, Dart, Flutter, PostgreSQL, MongoDB, Linux, Google Cloud,AWS,Oracle Cloud</span>
+      </div>
+    </section>
+    <section id="education">
+      <div class="title">
+        <h2>· Education ·</h2>
+      </div>
+      <div class="description">
+        <ul>
+          <li>Video courses on YouTube.</li>
+          <li>Books.</li>
+          <li>Docs.</li>
+          <li>RS School</li>
+        </ul>
+      </div>
+    </section>
+    <section id="language">
+      <div class="title">
+        <h2>· Language ·</h2>
+      </div>
+      <div class="description">
+        <div class="description__item">
+          <span>English</span>
+          <span>Pre-Intermediate</span>
+        </div>
+        <div class="description__item">
+          <span>Ukrainian</span>
+          <span>Native</span>
+        </div>
+        <div class="description__item">
+          <span>Russian</span>
+          <span>Native</span>
+        </div>
+      </div>
+    </section>
+    <section id="contacts">
+      <div class="title">
+        <h2>· Contacts ·</h2>
+      </div>
+      <div class="description">
+        <div class="description__item">
+          <span>Discord</span>
+          <span>Butterbuns#7044</span>
+        </div>
+        <div class="description__item">
+          <span>E-mail</span>
+          <span>ihorkysylevych5@gmail.com</span>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="title">
+        <h2>· Projects ·</h2>
+      </div>
+      <div class="description">
+        <div class="projects__img">
+          <a href="https://Orgierr.github.io/rsschool-cv/"><img src="./images/cv.jpg" alt="cv"></a>
+        </div>
+      </div>
+    </section>
+    <section id="code">
+      <div class="title">
+        <h2>· Code example ·</h2>
+      </div>
+      <div class="description">
+        <pre><code>
+          function spinWords(string){
+          return string.split(' ')
+          .map((w)=>w.length>=5?w.split('')
+          .reverse().join(''):w)
+          .join(' ');
+          }
+        </code></pre>
+      </div>
+    </section>
+    <div class="divider"></div>
+  </main>
+  <footer>
+    <div class="footer__copyright">
+      <span>© 2022 by Ihor Kysylevych</span>
+    </div>
+    <div class="footer__github">
+      <a href="https://github.com/Orgierr">Github</a>
+    </div>
+    <div class="footer__school">
+      <a href="https://rs.school/js-stage0/"><img src="./images/logo.svg" alt="" height="20"></a>
+    </div>
+  </footer>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>
